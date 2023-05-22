@@ -3,19 +3,26 @@
     padding: 0;
     box-sizing: border-box;
     overflow: none;
-    
+
 }
 
 html {
     height: 100%;
 }
 
-body, a {
+body,
+a {
     min-height: 100%;
     color: #2b6777;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     margin: 0;
     padding: 0;
 }
@@ -33,7 +40,8 @@ h1, h2, h3, h4, h5, h6, p {
     box-shadow: 0 0 18px rgb(157, 155, 245);
 }
 
-#map-area, .last-born {
+#map-area,
+.last-born {
     color: #2b6777;
     background: #f2f2f2;
 }
@@ -70,7 +78,8 @@ a {
     text-decoration: none;
 }
 
-#who, #leadership {
+#who,
+#leadership {
     background: #2b6777;
     color: #f2f2f2;
 }
@@ -92,7 +101,49 @@ iframe {
 #last-child-footer {
     background: #2b6777;
 }
-.contact, .card, #anchor, #last-child-footer, #h1 {
+
+.contact,
+.card,
+#anchor,
+#last-child-footer,
+#h1 {
     color: #2b6777;
 }
 
+/* Additional CSS styles for teachings audio component*/
+.active-audio {
+    display: block;
+}
+
+.paused-audio {
+    display: none;
+}
+
+.progress-container {
+    position: relative;
+    width: 100%;
+    height: 8px;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.progress-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #007bff;
+    border-radius: 4px;
+    transition: width 0.2s ease-in-out;
+}
+
+.play-btn {
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #007bff;
+}
